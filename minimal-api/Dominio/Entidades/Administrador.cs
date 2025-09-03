@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using minimal_api.Dominio.Enuns;
 
 namespace minimal_api.Dominio.Entidades;
 
