@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -49,8 +50,25 @@ app.MapPost("/administradores/login", ([FromBody] LoginDTO loginDTO, IAdministra
 #endregion
 
 #region Veiculos
+
+ValidationError ValidationDTO(VeiculoDTO veiculoDTO)
+{
+    var validation = new ValidationError
+    {
+        Mensagens = new List<string> {}
+    };
+    
+    if(string.IsNullOrEmpty(veiculoDTO.Nome)) validation.Mensagens.Add("O nome não pode ficar em branco");
+    if(string.IsNullOrEmpty(veiculoDTO.Marca)) validation.Mensagens.Add("A marca não pode ficar em branco");
+    if(veiculoDTO.Ano < 1950) validation.Mensagens.Add("O ano deve ser a partir de 1950");
+    return validation;
+}
+
 app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculoDTO, IVeiculoServico veiculoServico) =>
 {
+    var validation = ValidationDTO(veiculoDTO);
+    if(validation.Mensagens.Count > 0) return Results.BadRequest(validation);
+    
     var veiculo = new Veiculo
     {
         Nome = veiculoDTO.Nome,
@@ -78,6 +96,9 @@ app.MapPut("/veiculos/{id}", ([FromRoute]int id, VeiculoDTO veiculoDTO,IVeiculoS
 {
     var veiculo = veiculoServico.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
+    
+    var validation = ValidationDTO(veiculoDTO);
+    if(validation.Mensagens.Count > 0) return Results.BadRequest(validation);
 
     veiculo.Nome = veiculoDTO.Nome;
     veiculo.Marca = veiculoDTO.Marca;
