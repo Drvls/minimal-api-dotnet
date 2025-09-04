@@ -207,7 +207,7 @@ ValidationError ValidationVeiculosDTO(VeiculoDTO veiculoDTO)
 {
     var validation = new ValidationError
     {
-        Mensagens = new List<string> {}
+        Mensagens = new List<string>()
     };
     
     if(string.IsNullOrEmpty(veiculoDTO.Nome)) validation.Mensagens.Add("O nome não pode ficar em branco");

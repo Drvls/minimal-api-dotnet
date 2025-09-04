@@ -33,7 +33,7 @@ public class DbContexto : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         { 
-            string connectionAddress = _configuration.GetConnectionString("mysql")?.ToString();
+            var connectionAddress = _configuration.GetConnectionString("mysql");
 
             if (!string.IsNullOrEmpty(connectionAddress))
             {

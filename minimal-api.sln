@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minimal-api", "minimal-api\minimal-api.csproj", "{DDC1BC22-6D09-4BC7-ACC3-153C2B7FE99B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-minimal-api", "teste-minimal-api\teste-minimal-api.csproj", "{29B9B165-B617-4D96-B14D-D983604B64FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DDC1BC22-6D09-4BC7-ACC3-153C2B7FE99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC1BC22-6D09-4BC7-ACC3-153C2B7FE99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC1BC22-6D09-4BC7-ACC3-153C2B7FE99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B9B165-B617-4D96-B14D-D983604B64FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B9B165-B617-4D96-B14D-D983604B64FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B9B165-B617-4D96-B14D-D983604B64FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B9B165-B617-4D96-B14D-D983604B64FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
