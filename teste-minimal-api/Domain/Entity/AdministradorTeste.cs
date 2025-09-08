@@ -9,18 +9,19 @@ public class AdministradorTeste
     public void TestGetSetProperties()
     {
         // Arrange > variáveis para validação
-        var admin = new Administrador();
-        
-        // Act > Ação
-        admin.Id = 1;
-        admin.Email = "Teste@TesteUnitario.org";
-        admin.Senha = "TestandoUnitariamente";
-        admin.Perfil = "Admin";
+        var admin = new Administrador
+        {
+            // Act > Ação
+            Id = 1,
+            Email = "Teste@TesteUnitario.org",
+            Senha = "Testando",
+            Perfil = "Admin"
+        };
 
         // Assert > Validação
         Assert.AreEqual(1, admin.Id);
         Assert.AreEqual("Teste@TesteUnitario.org", admin.Email);
-        Assert.AreEqual("TestandoUnitariamente",  admin.Senha);
+        Assert.AreEqual("Testando",  admin.Senha);
         Assert.AreEqual("Admin",  admin.Perfil);
     }
 }

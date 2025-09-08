@@ -8,13 +8,14 @@ public class VeiculoTeste
     [TestMethod]
     public void TestGetSetProperties()
     {
-        var car = new Veiculo();
-        
-        car.Id = 1;
-        car.Nome = "Monza SL";
-        car.Marca = "Chevrolet";
-        car.Ano = 1984;
-        
+        var car = new Veiculo
+        {
+            Id = 1,
+            Nome = "Monza SL",
+            Marca = "Chevrolet",
+            Ano = 1984
+        };
+
         Assert.AreEqual(1, car.Id);
         Assert.AreEqual("Monza SL", car.Nome);
         Assert.AreEqual("Chevrolet", car.Marca);

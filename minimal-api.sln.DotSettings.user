@@ -9,6 +9,7 @@
     &lt;TestId&gt;MSTest::29B9B165-B617-4D96-B14D-D983604B64FD::net8.0::teste_minimal_api.Domain.Services.AdministradorServicoTeste&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::29B9B165-B617-4D96-B14D-D983604B64FD::net8.0::teste_minimal_api.Domain.Services.VeiculoServicoTest.TesteBuscaVeiculo&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::29B9B165-B617-4D96-B14D-D983604B64FD::net8.0::teste_minimal_api.Domain.Services.VeiculoServicoTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::29B9B165-B617-4D96-B14D-D983604B64FD::net8.0::teste_minimal_api.Request.AdministradorRequestTeste&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
