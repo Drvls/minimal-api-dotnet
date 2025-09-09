@@ -1,5 +1,5 @@
 # 🚀 API .NET com Entity Framework + MySQL + Testes Unitários
-![.NET](https://img.shields.io/badge/.NET-6/7-blue)
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-8-orange)
 ![MSTest](https://img.shields.io/badge/Testes-MSTest-brightgreen)
 
@@ -20,7 +20,7 @@ Este repositório também serve como portfólio para Backend .NET Developer.
 
 ## 🛠️ Tecnologias Utilizadas
 
-* .NET 7 (C#)
+* .NET 8.0 (C#)
 * Entity Framework Core
 * MySQL + Workbench
 * MSTest / MVC.Testing
@@ -51,16 +51,16 @@ Este repositório também serve como portfólio para Backend .NET Developer.
 
 * .NET SDK
 * MySQL + Workbench
-* Qualquer IDE com suporte para .NET 7 (VSCODE com extensão C#, Visual Studio, Rider) 
+* Qualquer IDE com suporte para .NET 8.0 (VSCODE com extensão C#, Visual Studio, Rider) 
 
 ### 🚀 Passos
 #### Clone o repositório
-```git
+``` git
 git clone https://github.com/Drvls/minimal-api-dotnet
 ```
 
 #### Acesse a pasta
-```terminal
+``` terminal
 cd minimal-api-dotnet
 ```
 
@@ -68,13 +68,13 @@ cd minimal-api-dotnet
 
 Crie um banco de dados no MySQL Workbench (nome livre, exemplo: minimal_api).
 
-```mysql
+``` mysql
 CREATE DATABASE minimal_api;
 ```
 
 No arquivo appsettings.json, configure a conexão em "mysql":
 
-```json
+``` json
 "ConnectionStrings": {
     "mysql": "Server=localhost;Database={BANCO DE DADOS};User Id={USER};Password={SENHA}"
   }
@@ -82,12 +82,12 @@ No arquivo appsettings.json, configure a conexão em "mysql":
 
 Aplique as migrations já criadas:
 
-```terminal
+``` terminal
 dotnet ef database update
 ```
 
 ### ▶️ Executando a API
-```terminal
+``` terminal
 dotnet run --project minimal-api
 ```
 
@@ -107,7 +107,7 @@ https://localhost:5001/swagger
 * Foram implementados testes para garantir confiabilidade das regras de negócio.
 
 Rodar os testes:
-```terminal
+``` terminal
 dotnet test
 ```
 ![Testes via CLI](./assets/test-cli.gif)
