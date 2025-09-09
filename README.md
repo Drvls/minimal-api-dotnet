@@ -11,6 +11,7 @@ Este projeto foi desenvolvido durante um bootcamp de .NET, com foco em criar uma
 * Entity Framework Core para persistência
 * MySQL como banco de dados
 * Testes unitários com MSTEST/MVC.Testing
+* JWT
 
 🎯 O objetivo é demonstrar boas práticas de arquitetura, clean code e testes automatizados.
 Este repositório também serve como portfólio para Backend .NET Developer.
@@ -19,12 +20,13 @@ Este repositório também serve como portfólio para Backend .NET Developer.
 
 ## 🛠️ Tecnologias Utilizadas
 
-* .NET 6/7 (C#)
+* .NET 7 (C#)
 * Entity Framework Core
 * MySQL + Workbench
 * MSTest / MVC.Testing
 * Swagger para documentação
 * Dependency Injection
+* JWT
 
 📂 Estrutura do Projeto
 ```
@@ -38,7 +40,7 @@ Este repositório também serve como portfólio para Backend .NET Developer.
     ┗ 📂 Servicos
  ┣ 📂 Infraestrutura
     ┗ 📂 Database
- ┣ appsettings.json   # Configurações (MySQL, etc.)
+ ┣ appsettings.json   # Configurações (MySQL, JWT, etc.)
  ┣ Startup.cs
  ┗ Program.cs
 ```
@@ -47,8 +49,9 @@ Este repositório também serve como portfólio para Backend .NET Developer.
 ## ⚙️ Como Rodar o Projeto
 ### 📋 Pré-requisitos
 
-* .NET SDK 7
+* .NET SDK
 * MySQL + Workbench
+* Qualquer IDE com suporte para .NET 7 (VSCODE com extensão C#, Visual Studio, Rider) 
 
 ### 🚀 Passos
 #### Clone o repositório
@@ -58,7 +61,7 @@ git clone https://github.com/Drvls/minimal-api-dotnet
 
 #### Acesse a pasta
 ```terminal
-cd nome-do-repo
+cd minimal-api-dotnet
 ```
 
 ### 🔧 Configuração do Banco de Dados
@@ -124,15 +127,11 @@ Endpoints via Swagger:
 
 ### 📈 Aprendizados
 
-Estruturar uma API RESTful em .NET
-
-Usar Entity Framework Core para persistência
-
-Criar e rodar migrations no MySQL
-
-Implementar testes unitários para maior confiabilidade
-
-Documentar API com Swagger
+* Estruturar uma API RESTful em .NET
+* Usar Entity Framework Core para persistência
+* Criar e rodar migrations no MySQL
+* Implementar testes unitários para maior confiabilidade
+* Documentar API com Swagger
 
 ---
 
